@@ -1,0 +1,70 @@
+#! /usr/bin/env bash
+RED="\e[31m"
+GREEN="\e[32m"
+END="\e[0m"
+printf  " ${GREEN}
+   ___  _  _   _                _____           _        _ _
+  / __\| || |_(_)_ __   __ _    \_   \_ __  ___| |_ __ _| | |
+ / _\|_  __  _| | |_ \ / _\ |    / /\/ |_ \/ __| __/ _\ | | |
+/ /  |_  __  _| | | | | (_| | /\/ /_ | | | \__ \ || (_| | | |
+\/     |_||_| |_|_| |_|\__/ | \____/ |_| |_|___/\__\__/_|_|_|
+                       |___/ ${RED}   By 0xRobiul   ${END}
+
+"
+sleep 2
+export GOPATH=/usr/local
+cd
+echo -e "${RED}[+]${GREEN} Installing Httpx${END}"
+go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+echo -e "${RED}[+]${GREEN} Installing Amass${END}"
+go install -v github.com/OWASP/Amass/v3/...@master
+echo -e "${RED}[+]${GREEN} Installing Ffuf${END}"
+go install github.com/ffuf/ffuf@latest
+echo -e "${RED}[+]${GREEN} Installing Chaos${END}"
+go install -v github.com/projectdiscovery/chaos-client/cmd/chaos@latest
+echo -e "${RED}[+]${GREEN} Installing Subfinder${END}"
+go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+echo -e "${RED}[+]${GREEN} Installing Waybackurls${END}"
+go install github.com/tomnomnom/waybackurls@latest
+echo -e "${RED}[+]${GREEN} Installing Gf${END}"
+go install github.com/tomnomnom/gf@latest
+echo -e "${RED}[+]${GREEN} Installing Kxss${END}"
+go install github.com/Emoe/kxss@latest
+echo -e "${RED}[+]${GREEN} Installing Uro${END}"
+pip3 install uro
+echo -e "${RED}[+]${GREEN} Installing Uncover${END}"
+go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest
+echo -e "${RED}[+]${GREEN} Installing Freq${END}"
+go install github.com/takshal/freq@latest
+echo -e "${RED}[+]${GREEN} Installing QsReplace${END}"
+go install github.com/tomnomnom/qsreplace@latest
+echo -e "${RED}[+]${GREEN} Installing SqlMap${END}"
+apt install sqlmap -y
+echo -e "${RED}[+]${GREEN} Installing Nuclei${END}"
+go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+echo -e "${RED}[+]${GREEN} Installing Nabbu${END}"
+apt install -y libpcap-dev
+go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+echo -e "${RED}[+]${GREEN} Installing Subjack${END}"
+go install github.com/haccer/subjack@latest
+echo -e "${RED}[+]${GREEN} Installing SecretFinder${END}"
+git clone https://github.com/m4ll0k/SecretFinder
+cd secretFinder
+pip3 install -r requirements.txt
+cd
+echo -e "${RED}[+]${GREEN} Installing Arjun${END}"
+pip3 install arjun
+echo -e "${RED}[+]${GREEN} Installing ParamSpider${END}"
+git clone https://github.com/devanshbatham/ParamSpider
+cd ParamSpider
+pip3 install -r requirements.txt
+cd
+echo -e "${RED}[+]${GREEN} Installing Byp4xx${END}"
+pip3 install git+https://github.com/lobuhi/byp4xx.git
+echo -e "${RED}[+]${GREEN} Installing GetAllUrls(gau)${END}"
+go install github.com/lc/gau/v2/cmd/gau@latest
+echo -e "${RED}[+]${GREEN} Installing Hakrawler${END}"
+go install github.com/hakluke/hakrawler@latest
+echo -e "${RED}[+]${GREEN} Installing Dnsx${END}"
+go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
+echo -e "${GREEN}[-]${RED} Fucking SuckSex${END}"
