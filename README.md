@@ -10,7 +10,7 @@
 <a href="https://github.com/0xrobiul/Fucking-Install/issues">
 <img src="https://img.shields.io/github/issues-raw/0xrobiul/Fucking-Install">
 </a>
-<a href="https:0xrobiul.me"><img src="https://img.shields.io/badge/Find%20Me-0xrobiul.me-red"></a>
+<a href="https://0xrobiul.me"><img src="https://img.shields.io/badge/Find%20Me-0xrobiul.me-red"></a>
 <a href="https://twitter.com/0xrobiul"><img src="https://img.shields.io/twitter/follow/0xrobiul.svg?logo=twitter"></a>
 </p>
       
