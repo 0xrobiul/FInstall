@@ -24,8 +24,6 @@ echo -e "${RED}[+]${GREEN} Installing Chaos${END}"
 go install -v github.com/projectdiscovery/chaos-client/cmd/chaos@latest
 echo -e "${RED}[+]${GREEN} Installing Subfinder${END}"
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-echo -e "${RED}[+]${GREEN} Installing Assetfinder${END}"
-go install github.com/tomnomnom/assetfinder
 echo -e "${RED}[+]${GREEN} Installing Waybackurls${END}"
 go install github.com/tomnomnom/waybackurls@latest
 echo -e "${RED}[+]${GREEN} Installing Gf${END}"
@@ -69,4 +67,6 @@ echo -e "${RED}[+]${GREEN} Installing Hakrawler${END}"
 go install github.com/hakluke/hakrawler@latest
 echo -e "${RED}[+]${GREEN} Installing Dnsx${END}"
 go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
+echo -e "${RED}[+]${GREEN} Installing Assetfinder${END}"
+go install github.com/tomnomnom/assetfinder
 echo -e "${GREEN}[-]${RED} Fucking SuckSex${END}"
