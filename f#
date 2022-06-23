@@ -31,7 +31,7 @@ go install github.com/tomnomnom/gf@latest
 echo -e "${RED}[+]${GREEN} Installing Kxss${END}"
 go install github.com/Emoe/kxss@latest
 echo -e "${RED}[+]${GREEN} Installing Uro${END}"
-pip3 install uro
+sudo pip3 install uro
 echo -e "${RED}[+]${GREEN} Installing Uncover${END}"
 go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest
 echo -e "${RED}[+]${GREEN} Installing Freq${END}"
@@ -39,28 +39,28 @@ go install github.com/takshal/freq@latest
 echo -e "${RED}[+]${GREEN} Installing QsReplace${END}"
 go install github.com/tomnomnom/qsreplace@latest
 echo -e "${RED}[+]${GREEN} Installing SqlMap${END}"
-apt install sqlmap -y
+sudo apt install sqlmap -y
 echo -e "${RED}[+]${GREEN} Installing Nuclei${END}"
 go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 echo -e "${RED}[+]${GREEN} Installing Nabbu${END}"
-apt install -y libpcap-dev
+sudo apt install -y libpcap-dev
 go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
 echo -e "${RED}[+]${GREEN} Installing Subjack${END}"
 go install github.com/haccer/subjack@latest
 echo -e "${RED}[+]${GREEN} Installing SecretFinder${END}"
 git clone https://github.com/m4ll0k/SecretFinder
 cd secretFinder
-pip3 install -r requirements.txt
+sudo pip3 install -r requirements.txt
 cd
 echo -e "${RED}[+]${GREEN} Installing Arjun${END}"
-pip3 install arjun
+sudo pip3 install arjun
 echo -e "${RED}[+]${GREEN} Installing ParamSpider${END}"
 git clone https://github.com/devanshbatham/ParamSpider
 cd ParamSpider
-pip3 install -r requirements.txt
+sudo pip3 install -r requirements.txt
 cd
 echo -e "${RED}[+]${GREEN} Installing Byp4xx${END}"
-pip3 install git+https://github.com/lobuhi/byp4xx.git
+sudo pip3 install git+https://github.com/lobuhi/byp4xx.git
 echo -e "${RED}[+]${GREEN} Installing GetAllUrls(gau)${END}"
 go install github.com/lc/gau/v2/cmd/gau@latest
 echo -e "${RED}[+]${GREEN} Installing Hakrawler${END}"
