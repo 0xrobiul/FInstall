@@ -24,6 +24,8 @@ echo -e "${RED}[+]${GREEN} Installing Chaos${END}"
 go install -v github.com/projectdiscovery/chaos-client/cmd/chaos@latest
 echo -e "${RED}[+]${GREEN} Installing Subfinder${END}"
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+echo -e "${RED}[+]${GREEN} Installing Assetfinder${END}"
+go install github.com/tomnomnom/assetfinder
 echo -e "${RED}[+]${GREEN} Installing Waybackurls${END}"
 go install github.com/tomnomnom/waybackurls@latest
 echo -e "${RED}[+]${GREEN} Installing Gf${END}"
