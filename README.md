@@ -36,4 +36,5 @@ wget https://raw.githubusercontent.com/0xrobiul/Fucking-Install/main/f%23; sudo 
 17)arjun         18)byp4xx
 19)gau           20)hakrawler
 21)dnsx          22)paramspider
+23)assetfinder
 ```
