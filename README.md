@@ -7,8 +7,8 @@
 
 
 <p align="center">
-<a href="https://github.com/0xrobiul/Fucking-Install/issues">
-<img src="https://img.shields.io/github/issues-raw/0xrobiul/Fucking-Install">
+<a href="https://github.com/0xrobiul/FInstall/issues">
+<img src="https://img.shields.io/github/issues-raw/0xrobiul/FInstall">
 </a>
 <a href="https://0xrobiul.me"><img src="https://img.shields.io/badge/Find%20Me-0xrobiul.me-red"></a>
 <a href="https://twitter.com/0xrobiul"><img src="https://img.shields.io/twitter/follow/0xrobiul.svg?logo=twitter"></a>
@@ -20,7 +20,7 @@
 F#ing Install requires **go1.17** & **pip3** to install all tools successfully. Run the following command to install the latest version Of all tools.
 
 ```sh
-wget https://raw.githubusercontent.com/0xrobiul/Fucking-Install/main/f%23; sudo bash f#
+wget https://raw.githubusercontent.com/0xrobiul/FInstall/main/f%23; sudo bash f#
 ```
 # It Contains
 
