@@ -68,5 +68,5 @@ go install github.com/hakluke/hakrawler@latest
 echo -e "${RED}[+]${GREEN} Installing Dnsx${END}"
 go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
 echo -e "${RED}[+]${GREEN} Installing Assetfinder${END}"
-go install github.com/tomnomnom/assetfinder
+go install github.com/tomnomnom/assetfinder@latest
 echo -e "${GREEN}[-]${RED} Fucking SuckSex${END}"
