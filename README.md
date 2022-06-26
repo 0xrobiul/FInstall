@@ -7,6 +7,7 @@
 
 
 <p align="center">
+<img src="https://img.shields.io/badge/Version-1.1-brightgreen">
 <a href="https://github.com/0xrobiul/FInstall/issues">
 <img src="https://img.shields.io/github/issues-raw/0xrobiul/FInstall">
 </a>
@@ -17,7 +18,7 @@
 
 # Install & Run
 
-F#ing Install requires **go1.17** & **pip3** to install all tools successfully. Run the following command to install the latest version Of all tools.
+F#ing Install requires `go1.17`, `cargo` & `pip3` to install all tools successfully. Run the following command to install the latest version Of all tools.
 
 ```sh
 wget https://raw.githubusercontent.com/0xrobiul/FInstall/main/f%23; bash f#
@@ -36,5 +37,6 @@ wget https://raw.githubusercontent.com/0xrobiul/FInstall/main/f%23; bash f#
 17)arjun         18)byp4xx
 19)gau           20)hakrawler
 21)dnsx          22)paramspider
-23)assetfinder
+23)assetfinder   24)NtHiM
+25)tlsx          26)interactsh
 ```
