@@ -21,7 +21,6 @@ echo -e "${RED}[+]${GREEN} Installing Required Packages${END}"
 apt install golang git cargo python3-pip
 sleep 2
 export GOPATH=/usr/local
-cd
 echo -e "${RED}[+]${GREEN} Installing Httpx${END}"
 sleep 2
 go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
