@@ -17,8 +17,11 @@ then
  exit 1
 fi
 sleep 2
+echo -e "${RED}[+]${GREEN} Updating System ${END}"
+sleep 2
+apt update -y
 echo -e "${RED}[+]${GREEN} Installing Required Packages${END}"
-apt install golang git cargo python3-pip
+apt install golang git cargo python3-pip -y
 sleep 2
 export GOPATH=/usr/local
 echo -e "${RED}[+]${GREEN} Installing Httpx${END}"
