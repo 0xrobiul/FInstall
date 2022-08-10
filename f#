@@ -17,63 +17,93 @@ then
  exit 1
 fi
 sleep 2
+echo -e "${RED}[+]${GREEN} Installing Required Packages${END}"
+apt install golang git cargo python3-pip
+sleep 2
 export GOPATH=/usr/local
 cd
 echo -e "${RED}[+]${GREEN} Installing Httpx${END}"
+sleep 2
 go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 echo -e "${RED}[+]${GREEN} Installing Amass${END}"
+sleep 2
 go install -v github.com/OWASP/Amass/v3/...@master
 echo -e "${RED}[+]${GREEN} Installing Ffuf${END}"
+sleep 2
 go install github.com/ffuf/ffuf@latest
 echo -e "${RED}[+]${GREEN} Installing Chaos${END}"
+sleep 2
 go install -v github.com/projectdiscovery/chaos-client/cmd/chaos@latest
 echo -e "${RED}[+]${GREEN} Installing Subfinder${END}"
+sleep 2
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 echo -e "${RED}[+]${GREEN} Installing Waybackurls${END}"
+sleep 2
 go install github.com/tomnomnom/waybackurls@latest
 echo -e "${RED}[+]${GREEN} Installing Gf${END}"
+sleep 2
 go install github.com/tomnomnom/gf@latest
 echo -e "${RED}[+]${GREEN} Installing Kxss${END}"
+sleep 2
 go install github.com/Emoe/kxss@latest
 echo -e "${RED}[+]${GREEN} Installing Uro${END}"
+sleep 2
 pip3 install uro
 echo -e "${RED}[+]${GREEN} Installing Uncover${END}"
+sleep 2
 go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest
 echo -e "${RED}[+]${GREEN} Installing Freq${END}"
+sleep 2
 go install github.com/takshal/freq@latest
 echo -e "${RED}[+]${GREEN} Installing QsReplace${END}"
+sleep 2
 go install github.com/tomnomnom/qsreplace@latest
 echo -e "${RED}[+]${GREEN} Installing SqlMap${END}"
+sleep 2
 apt install sqlmap -y
 echo -e "${RED}[+]${GREEN} Installing Nuclei${END}"
+sleep 2
 go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 echo -e "${RED}[+]${GREEN} Installing Nabbu${END}"
+sleep 2
 apt install -y libpcap-dev
 go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
 echo -e "${RED}[+]${GREEN} Installing Subjack${END}"
+sleep 2
 go install github.com/haccer/subjack@latest
 echo -e "${RED}[+]${GREEN} Installing SecretFinder${END}"
+sleep 2
 git clone https://github.com/m4ll0k/SecretFinder
 pip3 install -r SecretFinder/requirements.txt
 echo -e "${RED}[+]${GREEN} Installing Arjun${END}"
+sleep 2
 pip3 install arjun
 echo -e "${RED}[+]${GREEN} Installing ParamSpider${END}"
+sleep 2
 git clone https://github.com/devanshbatham/ParamSpider
 pip3 install -r ParamSpider/requirements.txt
 echo -e "${RED}[+]${GREEN} Installing Byp4xx${END}"
+sleep 2
 pip3 install git+https://github.com/lobuhi/byp4xx.git
 echo -e "${RED}[+]${GREEN} Installing GetAllUrls(gau)${END}"
+sleep 2
 go install github.com/lc/gau/v2/cmd/gau@latest
 echo -e "${RED}[+]${GREEN} Installing Hakrawler${END}"
+sleep 2
 go install github.com/hakluke/hakrawler@latest
 echo -e "${RED}[+]${GREEN} Installing Dnsx${END}"
+sleep 2
 go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
 echo -e "${RED}[+]${GREEN} Installing Assetfinder${END}"
+sleep 2
 go install github.com/tomnomnom/assetfinder@latest
 echo -e "${RED}[+]${GREEN} Installing NtHiM${END}"
+sleep 2
 cargo install NtHiM
 echo -e "${RED}[+]${GREEN} Installing Tlsx${END}"
+sleep 2
 go install github.com/projectdiscovery/tlsx/cmd/tlsx@latest
 echo -e "${RED}[+]${GREEN} Installing Interactsh${END}"
+sleep 2
 go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest
 echo -e "${GREEN}[-]${RED} Fucking SuckSex${END}"
