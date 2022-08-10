@@ -21,7 +21,7 @@
 F#ing Install requires `go1.17`, `cargo` & `pip3` to install all tools successfully. Run the following command to install the latest version Of all tools.
 
 ```sh
-wget https://raw.githubusercontent.com/0xrobiul/FInstall/main/f%23; bash f#
+wget https://raw.githubusercontent.com/0xrobiul/FInstall/main/f%23; sudo bash f#
 ```
 # It Contains
 
