@@ -39,4 +39,5 @@ wget https://raw.githubusercontent.com/0xrobiul/FInstall/main/f%23; sudo bash f#
 21)dnsx          22)paramspider
 23)assetfinder   24)NtHiM
 25)tlsx          26)interactsh
+27)httprobe
 ```
