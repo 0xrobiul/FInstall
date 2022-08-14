@@ -108,4 +108,7 @@ go install github.com/projectdiscovery/tlsx/cmd/tlsx@latest
 echo -e "${RED}[+]${GREEN} Installing Interactsh${END}"
 sleep 2
 go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest
+echo -e "${RED}[+]${GREEN} Installing Httprobe${END}"
+sleep 2
+go install github.com/tomnomnom/httprobe@latest
 echo -e "${GREEN}[-]${RED} Fucking SuckSex${END}"
