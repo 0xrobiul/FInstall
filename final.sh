@@ -24,7 +24,6 @@ then
                 echo -e "${RED}[+]${GREEN} Installation Started${END}"
                 apt install unzip golang git cargo python3-pip -y &> /dev/null
 		export GOPATH=/usr
-		echo 'export GOPATH=/usr' >> /etc/profile
         fi
   elif [ $x == 2 ]
   then
@@ -34,13 +33,11 @@ then
         else
                 echo -e "${RED}[+]${GREEN} Installation Started${END}"
                 wget https://go.dev/dl/go1.19.linux-amd64.tar.gz &> /dev/null
-                rm -rf /usr/local/go && tar -C /usr/local -xzf go1.19.linux-amd64.tar.gz
+                rm -rf /usr/local/go && tar -C /usr -xzf go1.19.linux-amd64.tar.gz
                 export PATH=$PATH:/usr/go/bin
-		echo 'export PATH=$PATH:/usr/go/bin' >> /etc/profile
                 rm -rf go1.19.linux-amd64.tar.gz
                 apt install unzip git cargo python3-pip -y &> /dev/null
 		export GOPATH=/usr
-		echo 'export GOPATH=/usr' >> /etc/profile
         fi
   elif [ $x == 3 ]
   then
@@ -48,8 +45,6 @@ then
         pkg i unzip rust make perl golang python3 git &> /dev/null
 	export GOPATH=/data/data/com.termux/files/usr
 	export PATH=$PATH:/data/data/com.termux/files/usr/go/bin
-	echo 'export PATH=$PATH:/data/data/com.termux/files/usr/go/bin' >> /data/data/com.termux/files/usr/etc/profile
-	echo 'export GOPATH=/data/data/com.termux/files/usr' >> /data/data/com.termux/files/usr/etc/profile
   else
         echo -e "${RED}[×] ${YO}Error! Invalid Input!${END}"
   fi
@@ -87,6 +82,7 @@ then
   go install github.com/tomnomnom/gf@latest &> /dev/null
   go install github.com/projectdiscovery/uncover/cmd/uncover@latest &> /dev/null
   go install github.com/Emoe/kxss@latest &> /dev/null
+  go install github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
   go install dw1.io/go-dork@latest &> /dev/null
   git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap &> /dev/null
   if [ $x == 2 ]
@@ -97,10 +93,10 @@ then
     git clone https://github.com/blechschmidt/massdns.git &> /dev/null;cd massdns;make &> /dev/null;mv bin/massdns /data/data/com.termux/files/usr/bin;cd ..;rm -rf massdns
   else
     curl -LO https://github.com/findomain/findomain/releases/latest/download/findomain-linux-i386.zip &> /dev/null;unzip findomain-linux-i386.zip &> /dev/null;rm -rf findomain-linux-i386.zip;chmod +x findomain;mv findomain /usr/bin/findomain
-    curl -sSfL https://git.io/crlfuzz | sh -s -- -b /usr/local/bin &> /dev/null
-    wget https://github.com/michenriksen/aquatone/releases/download/v1.7.0/aquatone_linux_amd64_1.7.0.zip &> /dev/null;unzip aquatone_linux_amd64_1.7.0.zip &> /dev/null;rm -rf aquatone_linux_amd64_1.7.0.zip headers LICENSE.txt screenshots html README.md;chmod +x aquatone;mv aquatone /usr/local/bin
-    wget https://raw.githubusercontent.com/AonCyberLabs/PadBuster/master/padBuster.pl &> /dev/null;chmod +x padBuster.pl;mv padBuster.pl /usr/local/bin/padbuster
-    git clone https://github.com/blechschmidt/massdns.git &> /dev/null;cd massdns;make &> /dev/null;mv bin/massdns /usr/local/bin;cd ..;rm -rf massdns
+    curl -sSfL https://git.io/crlfuzz | sh -s -- -b /usr/bin &> /dev/null
+    wget https://github.com/michenriksen/aquatone/releases/download/v1.7.0/aquatone_linux_amd64_1.7.0.zip &> /dev/null;unzip aquatone_linux_amd64_1.7.0.zip &> /dev/null;rm -rf aquatone_linux_amd64_1.7.0.zip headers LICENSE.txt screenshots html README.md;chmod +x aquatone;mv aquatone /usr/bin
+    wget https://raw.githubusercontent.com/AonCyberLabs/PadBuster/master/padBuster.pl &> /dev/null;chmod +x padBuster.pl;mv padBuster.pl /usr/bin/padbuster
+    git clone https://github.com/blechschmidt/massdns.git &> /dev/null;cd massdns;make &> /dev/null;mv bin/massdns /usr/bin;cd ..;rm -rf massdns
   fi
   echo -e "${GREEN}[✓]${RED} Installation Finished${END}"
 else
