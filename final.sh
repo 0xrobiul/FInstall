@@ -24,7 +24,7 @@ then
                 echo -e "${RED}[+]${GREEN} Installation Started${END}"
                 apt install unzip golang git cargo python3-pip -y &> /dev/null
 		export GOPATH=/usr
-		echp 'export GOPATH=/usr' >> /etc/profile
+		echo 'export GOPATH=/usr' >> /etc/profile
         fi
   elif [ $x == 2 ]
   then
@@ -40,7 +40,7 @@ then
                 rm -rf go1.19.linux-amd64.tar.gz
                 apt install unzip git cargo python3-pip -y &> /dev/null
 		export GOPATH=/usr
-		echp 'export GOPATH=/usr' >> /etc/profile
+		echo 'export GOPATH=/usr' >> /etc/profile
         fi
   elif [ $x == 3 ]
   then
